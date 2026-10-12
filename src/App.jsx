@@ -36,8 +36,7 @@ function Header() {
   return <header className="site-header">
     <div className="header-inner">
       <Link className="brand" to="/" aria-label="Mugil Foods home">
-        <img className="brand-logo" src="/mugil-foods-logo.svg" alt="" aria-hidden="true" />
-        <span className="brand-copy"><strong>MUGIL FOODS</strong><small>PURE · FRESH · TRADITIONAL</small></span>
+        <img className="brand-logo" src="/mugil-foods-logo.svg" alt="Mugil Foods — Pure, Fresh, Traditional" />
       </Link>
       <button className="menu-toggle" aria-label={open ? 'Close navigation' : 'Open navigation'} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
       <nav className={open ? 'main-nav is-open' : 'main-nav'}>
@@ -51,7 +50,7 @@ function Header() {
 function Footer() {
   return <footer className="footer">
     <div className="footer-main">
-      <div className="footer-brand"><Link className="brand brand-light" to="/"><img className="brand-logo" src="/mugil-foods-logo.svg" alt="" aria-hidden="true" /><span className="brand-copy"><strong>MUGIL FOODS</strong><small>PURE · FRESH · TRADITIONAL</small></span></Link><p>Build with trust, Assured with —<br /><em>Pure Fresh Traditional.</em></p></div>
+      <div className="footer-brand"><Link className="brand brand-light" to="/"><img className="brand-logo" src="/mugil-foods-logo.svg" alt="Mugil Foods — Pure, Fresh, Traditional" /></Link><p>Build with trust, Assured with —<br /><em>Pure Fresh Traditional.</em></p></div>
       <div><span className="footer-label">Explore</span><Link to="/products">Our products</Link><Link to="/services">Our services</Link><Link to="/about">About Mugil Foods</Link><Link to="/contact">Contact us</Link></div>
       <div><span className="footer-label">Product range</span><Link to="/products">Tamarind</Link><Link to="/products">Cold-pressed Oil</Link><Link to="/products">Pure Ghee</Link><Link to="/products">Natural Honey / Comb</Link></div>
       <div><span className="footer-label">Start a conversation</span><p>Looking for product details or supply information? We would be glad to hear from you.</p><Link className="footer-link" to="/contact">Send an enquiry <MoveUpRight size={15} /></Link></div>
